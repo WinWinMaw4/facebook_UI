@@ -1,0 +1,1471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="fb_style.css">
+    <link rel="stylesheet" href="feather_icon/Compressed/feather.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="js_facebook_UI.js"></script>
+   
+</head>
+<body>
+    <nav>
+        <div class="nav_left">
+            <div class="left_box">
+                <img id="fb_logo_img" src="fb_img/logo/fb_logo.png" alt="fb logo" onclick="darkMode()">            
+                <div class="search-box">
+                    <i class="feather-search search-icon" ></i>
+                    <input class="search-text" type="text"  name="search" placeholder="search Facebook">
+                </div>
+            </div>
+        </div>  
+        <div class="nav_center">
+            <div class="center_part">
+                <a href="" class="center_link  active" title="Home"><i class="fas fa-home center_icon"></i></a>
+                <a href="" class="center_link" title="Watch"><i class="feather-airplay center_icon"></i><span class="center_icon_noti">9+</span></a>
+                <a href="" class="center_link" title="See friends"><i class="feather-users center_icon"></i></a>
+                <a href="" class="center_link" title="Gaming"><i class="feather-layout center_icon"></i><span class="center_icon_noti">9+</span></a>                      
+            </div>
+        </div>  
+        <div class="nav_right">
+            <div class="right_part_box">
+                <div class="right_part  pf_link">
+                    <a href="https://www.facebook.com/winwinmaw4/" class="right_link">
+                     <img src="fb_img/profi_pic/pf.jpg">&nbsp;&nbsp;<span>Win</span>
+                    </a>
+                </div>
+                <div class="right_noti_box">
+                    <div class="right_part" title="Menu">  
+                        <a href="" class="right_link" ><img src="fb_img/logo/react/menu.png" alt="" class="right_icon"></a>                        
+                    </div>
+                    <div class="right_part" title="Messenger">
+                        <!-- <a href="" class="right_link"><i class="feather-message-square right_icon"></i></a> -->
+                        <a href="" class="right_link"><img src="fb_img/logo/messenger-icon.png" class="right_icon"></a>
+                    </div>
+                    <div class="right_part" title="Notification">
+                        <a href="" class="right_link"><i class="feather-bell right_icon"></i></a>
+                    </div>
+                    <div class="right_part" title="Account">
+                        <a href="" class="right_link"><i class="feather-chevron-down right_icon"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="fb_body">
+        <section class="fb_body_left_part scroll">
+            <div class="left-part-container">
+                <div class="left_part_first">
+                    <ul class="left_part_first_ul" id="left_part_first_ul">
+                        <li>
+                            <div class="left-part-list">
+                                <img src="fb_img/profi_pic/pf.jpg">&nbsp;&nbsp;
+                                <span>Win Win Maw</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="left-part-list">
+                                <img src="fb_img/logo/left_part_first/covid19.png">&nbsp;&nbsp;
+                                <span>COVID-19 Information Center</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="left-part-list">
+                                <img src="fb_img/logo/left_part_first/friends.png">&nbsp;&nbsp;
+                                <span>Friends</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="left-part-list">
+                                <img src="fb_img/logo/left_part_first/saved.png">&nbsp;&nbsp;
+                                <span>Saved</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="left-part-list">
+                                <img src="fb_img/logo/left_part_first/event.png">&nbsp;&nbsp;
+                                <span>Event</span>
+                            </div>
+                        </li>
+                        <li class="hide_part">
+                            <div class="left-part-list">
+                                <img src="fb_img/logo/left_part_first/ad_Center.png">&nbsp;&nbsp;
+                                <span>Ad Center</span>
+                            </div>
+                        </li>
+                        <li class="hide_part">
+                            <div class="left-part-list">
+                                <img src="fb_img/logo/left_part_first/community_Help.png">&nbsp;&nbsp;
+                                <span>Community Help</span>
+                            </div>
+                        </li>
+                        <li class="hide_part">
+                            <div class="left-part-list">
+                                <img src="fb_img/logo/left_part_first/facebook_Pay.png">&nbsp;&nbsp;
+                                <span>Facebook Pay</span>
+                            </div>
+                        </li>
+                        <li class="hide_part">
+                            <div class="left-part-list">
+                                <img src="fb_img/logo/left_part_first/favourites.png">&nbsp;&nbsp;
+                                <span>favourites</span>
+                            </div>
+                        </li>
+                        <li class="hide_part">
+                            <div class="left-part-list">
+                                <img src="fb_img/logo/left_part_first/friend_lists.png">&nbsp;&nbsp;
+                                <span>Friend lists</span>
+                            </div>
+                        </li>
+                        <li class="hide_part">
+                            <div class="left-part-list">
+                                <img src="fb_img/logo/left_part_first/fundraisers.png">&nbsp;&nbsp;
+                                <span>Fundraisers</span>
+                            </div>
+                        </li>
+                        <li class="hide_part">
+                            <div class="left-part-list">
+                                <img src="fb_img/logo/left_part_first/games.png">&nbsp;&nbsp;
+                                <span>Games</span>
+                            </div>
+                        </li>
+                        <li class="hide_part">
+                            <div class="left-part-list">
+                                <img src="fb_img/logo/left_part_first/gaming_video.png">&nbsp;&nbsp;
+                                <span>Gaming video<br><small><a href="#" class="noti"><div class="noti_circle"></div>9+ new</a></small></span>
+                            </div>
+                        </li>
+                        <li class="hide_part">
+                            <div class="left-part-list">
+                                <img src="fb_img/logo/left_part_first/groups.png">&nbsp;&nbsp;
+                                <span>Groups<br><small><a href="#" class="noti"><div class="noti_circle"></div>2+ new</a></small></span>
+                            </div>
+                        </li>
+                        <li class="hide_part">
+                            <div class="left-part-list">
+                                <img src="fb_img/logo/left_part_first/jobs.png">&nbsp;&nbsp;
+                                <span>Jobs</span>
+                            </div>
+                        </li>
+                        <li class="hide_part">
+                            <div class="left-part-list">
+                                <img src="fb_img/logo/left_part_first/live_videos.png">&nbsp;&nbsp;
+                                <span>Live videos</span>
+                            </div>
+                        </li>
+                        <li class="hide_part">
+                            <div class="left-part-list">
+                                <img src="fb_img/logo/left_part_first/memories.png">&nbsp;&nbsp;
+                                <span>Memories</span>
+                            </div>
+                        </li>
+                        <li class="hide_part">
+                            <div class="left-part-list" id="see_less" onclick="seemore();">
+                            <i class="feather-chevron-up" style="background-color: var(--soft-dark);padding: 10px;border-radius: 50%;" ></i>&nbsp;&nbsp;
+                                <span>see less</span>
+                            </div>
+                        </li>
+                        <li >
+                            <div class="left-part-list" id="see_more" onclick="seemore();">
+                            <i class="feather-chevron-down" style="background-color: var(--soft-dark);padding: 10px;border-radius: 50%;" ></i>&nbsp;&nbsp;
+                                <span>see more</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="divider" style="    width: 74%;margin-left: 15px;"></div>
+                <!-- left_part_second -->
+                <div class="left_part_second">
+                    <span>Your Shortcut</span>
+                    <span>
+                        <a href="#" class="edit" style="float:right;color:var(--primary);margin-right:50px;font-weight: 100;">Edit</a>
+                    </span>
+                    <ul class="your-shortcut" id="left_part_second_ul">
+                        <li>
+                            <div class="left-part-list shortcut">
+                                <img src="fb_img/logo/left_part_second/japanese.jpg">&nbsp;&nbsp;
+                                <span>Japanese Basic free class 1</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="left-part-list shortcut">
+                                <img src="fb_img/logo/left_part_second/web_laravel.jpg">&nbsp;&nbsp;
+                                <span>MMS IT Laravel</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="left-part-list shortcut">
+                                <img src="fb_img/logo/left_part_second/web_dev.jpg">&nbsp;&nbsp;
+                                <span>MMS IT Web Dev</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="left-part-list shortcut">
+                                <img src="fb_img/logo/left_part_second/mmsit.jpg">&nbsp;&nbsp;
+                                <span>MMS IT SWD</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="left-part-list shortcut">
+                                <img src="fb_img/logo/left_part_second/php.jpg">&nbsp;&nbsp;
+                                <span>New BWD</span>
+                            </div>
+                        </li>
+                        <!-- <li>
+                            <div class="left-part-list shortcut">
+                                <img src="fb_img/logo/left_part_second/codewall.jpg">&nbsp;&nbsp;
+                                <span>Web Design Free Class - CodeWall<br>Technologies</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="left-part-list shortcut">
+                                <img src="fb_img/logo/left_part_second/bwd10f.jpg">&nbsp;&nbsp;
+                                <span>PHP 101 Crash Course(ပညာဒါန)</span>
+                            </div>
+                        </li> -->
+                        <!-- <li>
+                            <div class="left-part-list">
+                                <img src="fb_img/logo/left_part_second/troll_Me.png">&nbsp;&nbsp;
+                                <span>Troll.Me</span>
+                            </div>
+                        </li> -->
+                        <li class="hide_part">
+                            <div class="left-part-list">
+                                <img src="fb_img/logo/left_part_second/2021.png">&nbsp;&nbsp;
+                                <span>2021</span>
+                            </div>
+                        </li>
+                        <!-- <li class="hide_part">
+                            <div class="left-part-list">
+                                <img src="fb_img/logo/left_part_second/.png">&nbsp;&nbsp;
+                                <span>BAM</span>
+                            </div>
+                        </li> -->
+                        <li class="hide_part">
+                            <div class="left-part-list">
+                                <img src="fb_img/logo/left_part_second/LOL.png">&nbsp;&nbsp;
+                                <span>LOL</span>
+                            </div>
+                        </li>
+                        <li class="hide_part">
+                            <div class="left-part-list">
+                                <img src="fb_img/logo/left_part_second/photoPix.png">&nbsp;&nbsp;
+                                <span>PhotoPix</span>
+                            </div>
+                        </li>
+                        <li class="hide_part">
+                            <div class="left-part-list">
+                                <img src="fb_img/logo/left_part_second/nyan_San.png">&nbsp;&nbsp;
+                                <span>Nyan San (ဉာဏ်စမ်း)</span>
+                            </div>
+                        </li>
+                        <li class="hide_part">
+                            <div class="left-part-list">
+                                <img src="fb_img/logo/left_part_second/rabbit_Run.png">&nbsp;&nbsp;
+                                <span>Rabbit Run Adventure</span>
+                            </div>
+                        </li>
+                        <li class="hide_part">
+                            <div class="left-part-list">
+                                <img src="fb_img/logo/left_part_second/guess_me.png">&nbsp;&nbsp;
+                                <span>Guess.me</span>
+                            </div>
+                        </li>
+                        <li class="hide_part">
+                            <div class="left-part-list">
+                                <img src="fb_img/logo/left_part_second/ginger.png">&nbsp;&nbsp;
+                                <span>GINGER</span>
+                            </div>
+                        </li>
+                        <li class="hide_part">
+                            <div class="left-part-list shortcut">
+                                <img src="fb_img/logo/left_part_second/flash.png">&nbsp;&nbsp;
+                                <span>Flash</span>
+                            </div>
+                        </li>
+                        <li class="hide_part">
+                            <div class="left-part-list shortcut">
+                                <img src="fb_img/logo/left_part_second/omg.png">&nbsp;&nbsp;
+                                <span>OMG</span>
+                            </div>
+                        </li>
+                        <li class="hide_part">
+                            <div class="left-part-list shortcut">
+                                <img src="fb_img/logo/left_part_second/math_Lover.png">&nbsp;&nbsp;
+                                <span>Math Lover</span>
+                            </div>
+                        </li>
+                        <li class="hide_part">
+                            <div class="left-part-list" id="see_less2" onclick="seemore2();">
+                            <i class="feather-chevron-up" style="background-color: var(--soft-dark);padding: 10px;border-radius: 50%;" ></i>&nbsp;&nbsp;
+                                <span>see less</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="left-part-list shortcut" id="see_more2" onclick="seemore2();">
+                            <i class="feather-chevron-down" style="background-color: var(--soft-dark);padding: 10px;border-radius: 50%;" ></i>&nbsp;&nbsp;
+                                <span>see more</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="link">
+                    <ul>
+                        <li>
+                            <a>Privacy</a>
+                        </li>
+                        <li>
+                            <a>.Terms</a>
+                        </li>
+                        <li>
+                            <a>.Adversting</a>
+                        </li>
+                        <li>
+                            <a>.Ad choices</a>
+                        </li>
+                        <li>
+                            <a>.Cookies</a>
+                        </li>
+                        <li>
+                            <a>.More</a>
+                        </li>
+                        <li>
+                            <a>.Facebook &copy; 2021</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="fb_main_part">
+            <div class="fb_main_part_container">
+                <!-- MyDay -->
+                <div class="my-day-container">
+                    <div class="my-day-list">
+                        <div class="my-day">
+                            <div class="owner-myday" style="background-image: url(fb_img/profi_pic/pf.jpg);"></div>
+                            <div class="owner-pf">
+                                <i class="feather-plus"></i>
+                            </div>
+                            <div class="my-day-text">create a story</div>            
+                        </div>
+                        <div class="my-day other">
+                            <div class="myday-content" style="background-image: url(fb_img/profi_pic/cho_myday.jpg);"></div>
+                            <div class="other-pf">
+                                <img src="fb_img/profi_pic/chokyi.jpg">
+                            </div>
+                            <div class="owner-name">Cho Kyi Khin</div>         
+                        </div>   
+                        <div class="my-day other">
+                            <div class="myday-content" style="background-image: url(fb_img/profi_pic/MyDay14.jpg);"></div>
+                            <div class="other-pf">
+                                <img src="fb_img/profi_pic/aye_yadanar_win.jpg">
+                            </div>
+                            <div class="owner-name">Aye Yadanar Win</div>         
+                        </div>   
+                        <div class="my-day other">
+                            <div class="myday-content" style="background-image: url(fb_img/profi_pic/MyDay12.jpg);"></div>
+                            <div class="other-pf">
+                                <img src="fb_img/profi_pic/pf3.jpeg">
+                            </div>
+                            <div class="owner-name">White Princess</div>         
+                        </div>   
+                        <div class="my-day other">
+                            <div class="myday-content" style="background-image: url(fb_img/profi_pic/minKhant.jpg);"></div>
+                            <div class="other-pf">
+                                <img src="fb_img/profi_pic/min_khant.jpg">
+                            </div>
+                            <div class="owner-name">Myat Thu Latt</div>         
+                        </div> 
+                        <div class="scroll-my-day">
+                            <i class="feather-arrow-right"></i>
+                        </div>               
+                    </div>
+                </div>  
+                <!--add_post -->
+                <div class="add_post" >
+                    <div class="add-post-box">
+                        <div class="add-text">
+                            <img class="add-text-pf" src="fb_img/profi_pic/pf.jpg" alt="fb logo">            
+                            <div class="add-text-box">
+                                <input class="post-text" type="text" placeholder="What's on your mind, Win? ">
+                            </div>
+                        </div>                    
+                    </div>
+                    <div class="divider"></div>
+                    <div class="add_file">
+                        <div class="live">
+                            <img src="fb_img/logo/react/live.png" alt="">
+                            <span>Live video</span>
+                        </div>
+                        <div class="photo">
+                            <img src="fb_img/logo/react/photo.png" alt="">
+                            <span>Photo/Video</span>
+                        </div>
+                        <div class="emoji">
+                            <img src="fb_img/logo/react/feeling.png" alt="">
+                            <span>Feeling/Activity</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- create-room -->
+                <div class="create-room-box">
+                    <div class="create-room">
+                        <div class="create-room-text">
+                            <!-- <i class="feather-video"></i> -->
+                            <img src="fb_img/logo/react/createRoom.png" alt="">
+                            <span>Create Room</span>
+                        </div>
+                    </div>
+                    <div class="create-room-pf">
+                        <div class="create-room-pf-item" title="Wai Yan">
+                            <img src="fb_img/profi_pic/min_khant.jpg">
+                            <div class="active-btn"></div>
+                        </div>
+                        <div class="create-room-pf-item" title="Htet">
+                            <img src="fb_img/profi_pic/htet.jpg">
+                            <div class="active-btn"></div>
+                        </div>
+                        <div class="create-room-pf-item" title="Yadanar Ko Ko">
+                            <img src="fb_img/profi_pic/koko.jpg">
+                            <div class="active-btn"></div>
+                        </div>
+                        <div class="create-room-pf-item" title="Myat Thu Latt">
+                            <img src="fb_img/profi_pic/myat_thu_latt1.jpg">
+                            <div class="active-btn"></div>
+                        </div>
+                        <div class="create-room-pf-item" title="Aye Yadanar Win">
+                            <img src="fb_img/profi_pic/aye_yadanar_win.jpg">
+                            <div class="active-btn"></div>
+                        </div>
+                        <div class="create-room-pf-item" title="Thet Htar">
+                            <img src="fb_img/profi_pic/thet_htar.jpg">
+                            <div class="active-btn"></div>
+                        </div>
+                        <div class="create-room-pf-item" title="Yadanar">
+                            <img src="fb_img/profi_pic/yadanar.jpg">
+                            <div class="active-btn"></div>
+                        </div>
+                        <div class="create-room-pf-item" title="Hein Htet Zan">
+                            <img src="fb_img/profi_pic/heinhtet.jpg">
+                            <div class="active-btn"></div>
+                        </div>
+                        <div class="create-room-pf-item" title="Cho Kyi Khin">
+                            <img src="fb_img/profi_pic/chokyi.jpg">
+                            <div class="active-btn"></div>
+                        </div>
+                        <div class="create-room-pf-item">
+                            <img src="fb_img/profi_pic/susandy.jpg">
+                            <div class="active-btn"></div>
+                        </div>
+                        <div class="create-room-pf-item">
+                            <img src="fb_img/profi_pic/myat_po.jpg">
+                            <div class="active-btn"></div>
+                        </div>
+                    </div>
+                    <div class="scroll-create-room">
+                        <i class="feather-chevron-right"></i>
+                    </div>
+                </div>
+                <!-- post-list -->
+                <div class="post_list">
+                    <!-- post head -->
+                    <div class="post-head">
+                        <div class="pf-box">
+                            <div class="pf-img">
+                                <img src="fb_img/profi_pic/sarcasm.jpg" >
+                            </div>
+                            <p class="pf-text">
+                               <span> Sarcasm</span><br>
+                                <small>12h<sup>&nbsp;.&nbsp;</sup><i class="fas fa-globe-asia"></i></small>
+                            </p>
+                        </div>
+                        <div class="post-choice">
+                            <!-- <img src="fb_img/logo/react/public.png" alt=""> -->
+                            <i class="feather-more-horizontal"></i>
+                        </div>
+                    </div>
+                    <!-- post body -->
+                    <div class="post-body">
+                        <!-- <div class="post-innertext">L'OREAL ပွဲမှာတွေ့ရတဲ့ Moe </div> -->
+                        <div class="post-photo">
+                            <img src="fb_img/post/sarcasm.jpg">
+                        </div>
+                    </div>
+                    <!-- post-react-part -->
+                    <div class="react-part">
+                        <div class="total-react">
+                            <div class="total-like">
+                                <!-- <i class="fas fa-thumbs-up" style="color: var(--primary);"></i> -->
+                                <img src="fb_img/logo/react/like.png" alt="" style="left: 0;z-index: 10;">
+                                <img src="fb_img/logo/react/haha.png" alt="" style="left: 18px;z-index: 9;">
+                                <img src="fb_img/logo/react/sad.png" alt="" style="left: 36px;z-index: 8;">
+                                <span><a href="#">120</a></span>
+                            </div>                        
+                            <div class="total-cs"><a href="#">130comments </a>&nbsp;<a href="#">98shares</a></div>
+                        </div>
+                        <div class="divider post-divider"></div>
+                        <div class="give-react">
+                            <div class="like">
+                                <i class="fas fa-thumbs-up" style="color: var(--primary);"></i>
+                                <!-- <i class="far fa-thumbs-up"></i> -->
+                                <span style="color: var(--primary);font-weight: bold;">Like</span>
+                            </div>
+                            <div class="comment">
+                                <i class="feather-message-square" ></i>
+                                <span>Comment</span>
+                            </div>
+                            <div class="share">
+                                <i class="feather-share" ></i>
+                                <span>Share</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- second post  -->
+                <div class="post_list">
+                    <!-- post head -->
+                    <div class="post-head">
+                        <div class="pf-box">
+                            <div class="pf-img">
+                                <img src="fb_img/profi_pic/moe.jpg" >
+                            </div>
+                            <p class="pf-text">
+                               <span>Moe Thinzar Aung</span><br>
+                               <small>31m<base>&nbsp;.&nbsp;</base><i class="fas fa-globe-asia fa-1x"></i></small>
+                            </p>
+                        </div>
+                        <div class="post-choice">
+                            <i class="feather-more-horizontal"></i>
+                        </div>
+                    </div>
+                    <!-- post body -->
+                    <div class="post-body">
+                        <!-- <div class="post-innertext"></div> -->
+                        <div class="post-photo">
+                            <img src="fb_img/pf6.jpg">
+                        </div>
+                    </div>
+                    <!-- post-react-part -->
+                    <div class="react-part">
+                        <div class="total-react">
+                            <div class="total-like">
+                                <img src="fb_img/logo/react/like.png" alt="" style="left: 0;z-index: 10;">
+                                <img src="fb_img/logo/react/love.png" alt="" style="left: 18px;z-index: 9;">
+                                <img src="fb_img/logo/react/care.png" alt="" style="left: 36px;z-index: 8;">
+                                <span><a href="#">986</a></span>
+                            </div>                        
+                            <div class="total-cs"><a href="#">1.2k Comments </a>&nbsp;<a href="#">654 Shares</a></div>
+                        </div>
+                        <div class="divider post-divider"></div>
+                        <div class="give-react">
+                            <div class="like">
+                                <img src="fb_img/logo/react/love.png" alt="" width="">
+                                <span style="color: rgb(245, 60, 60);font-weight: bold;">Love</span>
+                            </div>
+                            <div class="comment">
+                                <i class="feather-message-square" ></i>
+                                <span>Comment</span>
+                            </div>
+                            <div class="share">
+                                <i class="feather-share" ></i>
+                                <span>Share</span>
+                            </div>
+                        </div>
+                        <div class="divider post-divider"></div>
+                        <div class="give-comment">
+                            <div class="give-comment-img">
+                                <img src="fb_img/profi_pic/pf.jpg" >
+                            </div>
+                            <div class="add-text-box">
+                                <input type="text" class="post-text" placeholder="Write a comment..">
+                                <div class="give-comment-icon">
+                                    <img src="fb_img/logo/react/emj.png " alt="" >  
+                                    <img src="fb_img/logo/react/camera.png " alt="" >  
+                                    <img src="fb_img/logo/react/gif2.png " alt="" >
+                                    <img src="fb_img/logo/react/sticker.png " alt="" >                                
+                                </div>
+                            </div>                        
+                        </div>
+                    </div>
+                </div>
+                <!-- third post -->
+                <div class="post_list">
+                    <!-- post head -->
+                    <div class="post-head">
+                        <div class="pf-box">
+                            <div class="pf-img">
+                                <img src="fb_img/profi_pic/win.jpg" >
+                            </div>
+                            <p class="pf-text">
+                                <span>Win Win Maw</span><br>
+                                <small>20min<sup>&nbsp;.&nbsp;</sup><i class="fas fa-user-friends"></i></small>
+                            </p>
+                        </div>
+                        <div class="post-choice">
+                            <i class="feather-more-horizontal"></i>
+                        </div>
+                    </div>
+                    <!-- post body -->
+                    <div class="post-body">
+                        <div class="post-innertext">Nobody can do for your lose<br>Only you can do this </div>
+                        <!-- <div class="post-photo">
+                            <img src="fb_img/post3.jpg">
+                        </div> -->
+                    </div>
+                    <!-- post-react-part -->
+                    <div class="react-part">
+                        <div class="total-react">
+                            <div class="total-like">
+                                <img src="fb_img/logo/react/like.png" alt="" style="left: 0;z-index: 10;">
+                                <img src="fb_img/logo/react/love.png" alt="" style="left: 18px;z-index: 9;">
+                                <span  style="left: 40px;"><a href="#">8</a></span>
+                            </div>                        
+                            <div class="total-cs"><a href="#">3 Comments </a> &nbsp;</div>
+                        </div>
+                        <div class="divider post-divider"></div>
+                        <div class="give-react">
+                            <div class="like">
+                                <i class="feather-thumbs-up"></i>
+                                <span>Like</span>
+                            </div>
+                            <div class="comment">
+                                <i class="feather-message-square" ></i>
+                                <span>Comment</span>
+                            </div>
+                            <div class="share">
+                                <i class="feather-share" ></i>
+                                <span>Share</span>
+                            </div>
+                        </div>
+                        <div class="divider post-divider"></div>
+                        <div class="give-comment">
+                            <div class="give-comment-img">
+                                <img src="fb_img/profi_pic/pf.jpg" >
+                            </div>
+                            <div class="add-text-box">
+                                <input type="text" class="post-text" placeholder="Write a comment..">
+                                <div class="give-comment-icon">
+                                    <img src="fb_img/logo/react/emj.png " alt="" >  
+                                    <img src="fb_img/logo/react/camera.png " alt="" >  
+                                    <img src="fb_img/logo/react/gif2.png " alt="" >
+                                    <img src="fb_img/logo/react/sticker.png " alt="" >       
+                                </div>
+                            </div>                        
+                        </div>
+                    </div>
+                </div>
+                <!-- 4 post -->
+                <div class="post_list">
+                    <!-- post head -->
+                    <div class="post-head">
+                        <div class="pf-box">
+                            <div class="pf-img">
+                                <img src="fb_img/profi_pic/aesthetic.jpg" >
+                            </div>
+                            <p class="pf-text">
+                              <span style="font-family: Courier, monospace;font-weight: bold;font-style: italic;">Aesthetic ♥️ 2</span><br>
+                               <small>31m<base>&nbsp;.&nbsp;</base><i class="fas fa-globe-asia fa-1x"></i></small>
+                            </p>
+                        </div>
+                        <div class="post-choice">
+                            <i class="feather-more-horizontal"></i>
+                        </div>
+                    </div>
+                    <!-- post body -->
+                    <div class="post-body">
+                        <div class="post-innertext">Buger🍔 Pizza🍕</div>
+                        <div class="post-photo">
+                            <img src="fb_img/post/4_post.jpg">
+                        </div>
+                    </div>
+                    <!-- post-react-part -->
+                    <div class="react-part">
+                        <div class="total-react">
+                            <div class="total-like">
+                                <img src="fb_img/logo/react/love.png" alt="" style="left: 0;z-index: 10;">
+                                <img src="fb_img/logo/react/like.png" alt="" style="left: 17px;z-index: 9;">
+                                <span style="left: 45px;"><a href="#">133</a></span>
+                            </div>                        
+                            <div class="total-cs"><a href="#">14k Comments </a>&nbsp;<a href="#">60 Shares</a></div>
+                        </div>
+                        <div class="divider post-divider"></div>
+                        <div class="give-react">
+                            <div class="like">
+                                <img src="fb_img/logo/react/love.png" alt="" width="">
+                                <span style="color: rgb(245, 60, 60);font-weight: bold;">Love</span>
+                            </div>
+                            <div class="comment">
+                                <i class="feather-message-square" ></i>
+                                <span>Comment</span>
+                            </div>
+                            <div class="share">
+                                <i class="feather-share" ></i>
+                                <span>Share</span>
+                            </div>
+                        </div>
+                        <!-- <div class="divider post-divider"></div> -->
+                        <!-- <div class="give-comment">
+                            <div class="give-comment-img">
+                                <img src="fb_img/profi_pic/pf.jpg" >
+                            </div>
+                            <div class="add-text-box">
+                                <input type="text" class="post-text" placeholder="Write a comment..">
+                                <div class="give-comment-icon">
+                                    <i class="far fa-smile"></i>
+                                    <i class="feather-camera"></i>
+                                    <i class="feather-youtube"></i>
+                                    <i class="feather-image"></i>
+                                </div>
+                            </div>                        
+                        </div> -->
+                    </div>
+                </div>
+                <!-- 5 post -->
+                <div class="post_list">
+                    <!-- post head -->
+                    <div class="post-head">
+                        <div class="pf-box">
+                            <div class="pf-img">
+                                <img src="fb_img/profi_pic/one_daily.jpg" >
+                            </div>
+                            <p class="pf-text">
+                            <span> One Daily</span><br>
+                            <small>Yesterday at 1:25pm<base>&nbsp;.&nbsp;</base><i class="fas fa-globe-asia fa-1x"></i></small>
+                            </p>
+                        </div>
+                        <div class="post-choice">
+                            <i class="feather-more-horizontal"></i>
+                        </div>
+                    </div>
+                    <!-- post body -->
+                    <div class="post-body">
+                        <div class="post-innertext">ကျောင်းနေဖတ် သူငယ်ချင်းဆိုတာ နှလုံးသားရဲ့ အနက်ရှိုင်းဆုံး တစ်နေရာက အရေးပါသူတွေပါ...</div>
+                        <div class="post-photo">
+                            <img src="fb_img/post/5_post.jpg">
+                        </div>
+                    </div>
+                    <!-- post-react-part -->
+                    <div class="react-part">
+                        <div class="total-react">
+                            <div class="total-like">
+                                <img src="fb_img/logo/react/love.png" alt="" style="left: 0;z-index: 10;">
+                                <img src="fb_img/logo/react/care.png" alt="" style="left: 18px;z-index: 9;">
+                                <img src="fb_img/logo/react/sad.png" alt="" style="left: 36px;z-index: 8;">
+                                <span><a href="#">153</a></span>
+                            </div>                        
+                            <div class="total-cs"><a href="#">86 Comments </a>&nbsp;<a href="#">50 Shares</a></div>
+                        </div>
+                        <div class="divider post-divider"></div>
+                        <div class="give-react">
+                            <div class="like">
+                                <img src="fb_img/logo/react/love.png" alt="" width="">
+                                <span style="color: rgb(245, 60, 60);font-weight: bold;">Love</span>
+                            </div>
+                            <div class="comment">
+                                <i class="feather-message-square" ></i>
+                                <span>Comment</span>
+                            </div>
+                            <div class="share">
+                                <i class="feather-share" ></i>
+                                <span>Share</span>
+                            </div>
+                        </div>
+                        <!-- <div class="divider post-divider"></div> -->
+                        <!-- <div class="give-comment">
+                            <div class="give-comment-img">
+                                <img src="fb_img/profi_pic/pf.jpg" >
+                            </div>
+                            <div class="add-text-box">
+                                <input type="text" class="post-text" placeholder="Write a comment..">
+                                <div class="give-comment-icon">
+                                    <i class="far fa-smile"></i>
+                                    <i class="feather-camera"></i>
+                                    <i class="feather-youtube"></i>
+                                    <i class="feather-image"></i>
+                                </div>
+                            </div>                        
+                        </div> -->
+                    </div>
+                </div>
+                 <!-- 9_post -->
+                 <div class="post_list">
+                    <!-- post head -->
+                    <div class="post-head">
+                        <div class="pf-box">
+                            <div class="pf-img">
+                                <img src="fb_img/profi_pic/win.jpg" >
+                            </div>
+                            <p class="pf-text">
+                                <span>Win Win Maw</span><br>
+                                <small>1hr ago<sup>&nbsp;.&nbsp;</sup><i class="fas fa-user-friends"></i></small>
+                            </p>
+                        </div>
+                        <div class="post-choice">
+                            <i class="feather-more-horizontal"></i>
+                        </div>
+                    </div>
+                    <!-- post body -->
+                    <div class="post-body">
+                        <div class="post-innertext"></div>
+                        <div class="post-photo">
+                            <img src="fb_img/post/9_post.jpg">
+                        </div>
+                    </div>
+                    <!-- post-react-part -->
+                    <div class="react-part">
+                        <div class="total-react">
+                            <div class="total-like">
+                                <img src="fb_img/logo/react/like.png" alt="" style="left: 0;z-index: 10;">
+                                <img src="fb_img/logo/react/love.png" alt="" style="left: 18px;z-index: 9;">
+                                <span  style="left: 40px;"><a href="#">14</a></span>
+                            </div>                        
+                            <div class="total-cs"><a href="#">3 Comments </a> &nbsp;<a href="#">2 Shares </a></div>
+                        </div>
+                        <div class="divider post-divider"></div>
+                        <div class="give-react">
+                            <div class="like">
+                                <i class="feather-thumbs-up"></i>
+                                <span>Like</span>
+                            </div>
+                            <div class="comment">
+                                <i class="feather-message-square" ></i>
+                                <span>Comment</span>
+                            </div>
+                            <div class="share">
+                                <i class="feather-share" ></i>
+                                <span>Share</span>
+                            </div>
+                        </div>
+                        <div class="divider post-divider"></div>
+                        <div class="give-comment">
+                            <div class="give-comment-img">
+                                <img src="fb_img/profi_pic/pf.jpg" >
+                            </div>
+                            <div class="add-text-box">
+                                <input type="text" class="post-text" placeholder="Write a comment..">
+                                <div class="give-comment-icon">
+                                    <img src="fb_img/logo/react/emj.png " alt="" >  
+                                    <img src="fb_img/logo/react/camera.png " alt="" >  
+                                    <img src="fb_img/logo/react/gif2.png " alt="" >
+                                    <img src="fb_img/logo/react/sticker.png " alt="" >       
+                                </div>
+                            </div>                        
+                        </div>
+                    </div>
+                </div>
+                <!-- 6 post -->
+                <div class="post_list">
+                    <span style="padding:18px;color: var(--text-grey);line-height: 2.5;">suggested for you</span>
+                    <div class="divider post-divider"></div> 
+                    <!-- post head -->
+                    <div class="post-head">
+                        <div class="pf-box">
+                            <div class="pf-img">
+                                <img src="fb_img/profi_pic/movie_short_review.jpg" >
+                            </div>
+                            <p class="pf-text">
+                            <span> Movie Short Review</span><br>
+                            <small>3h&nbsp;.&nbsp; <i class="fas fa-globe-asia fa-1x"></i></small>
+                            </p>
+                        </div>
+                        <div class="post-choice">
+                            <i class="feather-more-horizontal"></i>
+                        </div>
+                    </div>
+                    <!-- post body -->
+                    <div class="post-body">
+                        <div class="post-innertext">
+                            "အရမ်းကို စိုးရွားလှတဲ့ ဒီနေရာက ဘယ်လိုနေရာလဲ"<br>
+                            "ဒါက လက်တွေ့ဘဝလေ"<br>
+
+                            Enchanted(2007)<br>
+                            <span style="color:var(--primary);">#MSR<br>#memory</span>
+                        </div>
+                        <div class="post-photo">
+                            <img src="fb_img/post/6_post.jpg">
+                        </div>
+                    </div>
+                    <!-- post-react-part -->
+                    <div class="react-part">
+                        <div class="total-react">
+                            <div class="total-like">
+                                <img src="fb_img/logo/react/sad.png" alt="" style="left: 0;z-index: 10;">
+                                <img src="fb_img/logo/react/like.png" alt="" style="left: 18px;z-index: 9;">
+                                <img src="fb_img/logo/react/love.png" alt="" style="left: 36px;z-index: 8;">
+                                <span><a href="#">Kyawt Su Thwe,Sadiyah and 3.3k others</a></span>
+                            </div>                        
+                            <div class="total-cs"><a href="#">22 Comments </a>&nbsp;<a href="#">547 Shares</a></div>
+                        </div>
+                        <div class="divider post-divider"></div>
+                        <div class="give-react">
+                            <div class="like">
+                                <img src="fb_img/logo/react/love.png" alt="" width="">
+                                <span style="color: rgb(245, 60, 60);font-weight: bold;">Love</span>
+                            </div>
+                            <div class="comment">
+                                <i class="feather-message-square" ></i>
+                                <span>Comment</span>
+                            </div>
+                            <div class="share">
+                                <i class="feather-share" ></i>
+                                <span>Share</span>
+                            </div>
+                        </div>
+                        <!-- <div class="divider post-divider"></div> -->
+                        <!-- <div class="give-comment">
+                            <div class="give-comment-img">
+                                <img src="fb_img/profi_pic/pf.jpg" >
+                            </div>
+                            <div class="add-text-box">
+                                <input type="text" class="post-text" placeholder="Write a comment..">
+                                <div class="give-comment-icon">
+                                    <i class="far fa-smile"></i>
+                                    <i class="feather-camera"></i>
+                                    <i class="feather-youtube"></i>
+                                    <i class="feather-image"></i>
+                                </div>
+                            </div>                        
+                        </div> -->
+                    </div>
+                </div>
+                <!-- 7 post -->
+                <div class="post_list">
+                    <!-- post head -->
+                    <div class="post-head">
+                        <div class="pf-box">
+                            <div class="pf-img">
+                                <img src="fb_img/profi_pic/innovative.jpg" >
+                            </div>
+                            <p class="pf-text">
+                                <span style="font-family:'Times New Roman', Times, serif">Innovative</span><br>
+                                <small>July 29 at 6:20PM<sup>&nbsp;.&nbsp;</sup><i class="fas fa-globe-asia fa-1x"></i></small>
+                            </p>
+                        </div>
+                        <div class="post-choice">
+                            <i class="feather-more-horizontal"></i>
+                        </div>
+                    </div>
+                    <!-- post body -->
+                    <div class="post-body">
+                        <div class="post-innertext">I can't wait to see my bestfriend on that day!❤️❤️❤️ </div>
+                        <div class="post-photo">
+                            <img src="fb_img/post/7_post.jpg">
+                        </div>
+                    </div>
+                    <!-- post-react-part -->
+                    <div class="react-part">
+                        <div class="total-react">
+                            <div class="total-like">
+                                <img src="fb_img/logo/react/like.png" alt="" style="left: 0;z-index: 10;">
+                                <img src="fb_img/logo/react/love.png" alt="" style="left: 18px;z-index: 9;">
+                                <img src="fb_img/logo/react/care.png" alt="" style="left: 36px;z-index: 8;">
+                                <span  style="left: 63px;"><a href="#">Win Win Maw and 504 others</a></span>
+                            </div>                        
+                            <div class="total-cs"><a href="#">208 Comments </a> &nbsp;<a href="#">168 Shares </a></div>
+                        </div>
+                        <div class="divider post-divider"></div>
+                        <div class="give-react">
+                            <div class="like">
+                                <img src="fb_img/logo/react/care.png" alt="" width="">
+                                <span style="color: rgb(231, 177, 0);font-weight: bold;">care</span>
+                            </div>
+                            <div class="comment">
+                                <i class="feather-message-square" ></i>
+                                <span>Comment</span>
+                            </div>
+                            <div class="share">
+                                <i class="feather-share" ></i>
+                                <span>Share</span>
+                            </div>
+                        </div>
+                        <div class="divider post-divider"></div>
+                        <div class="give-comment">
+                            <div class="give-comment-img">
+                                <img src="fb_img/profi_pic/pf.jpg" >
+                            </div>
+                            <div class="add-text-box">
+                                <input type="text" class="post-text" placeholder="Write a comment..">
+                                <div class="give-comment-icon">
+                                    <img src="fb_img/logo/react/emj.png " alt="" >  
+                                    <img src="fb_img/logo/react/camera.png " alt="" >  
+                                    <img src="fb_img/logo/react/gif2.png " alt="" >
+                                    <img src="fb_img/logo/react/sticker.png " alt="" >       
+                                </div>
+                            </div>                        
+                        </div>
+                    </div>
+                </div>
+                 <!-- 8 post -->
+                 <div class="post_list">
+                    <!-- post head -->
+                    <div class="post-head">
+                        <div class="pf-box">
+                            <div class="pf-img">
+                                <img src="fb_img/profi_pic/BAWA.jpg" >
+                            </div>
+                            <p class="pf-text">
+                                <span style="font-family:'Times New Roman', Times, serif;font-weight: bolder;">BaWa</span><br>
+                                <small>21mins<sup>&nbsp;.&nbsp;</sup><i class="fas fa-globe-asia fa-1x"></i></small>
+                            </p>
+                        </div>
+                        <div class="post-choice">
+                            <i class="feather-more-horizontal"></i>
+                        </div>
+                    </div>
+                    <!-- post body -->
+                    <div class="post-body">
+                        <div class="post-innertext"> </div>
+                        <div class="post-photo">
+                            <img src="fb_img/post/8_post.jpg">
+                        </div>
+                    </div>
+                    <!-- post-react-part -->
+                    <div class="react-part">
+                        <div class="total-react">
+                            <div class="total-like">
+                                <img src="fb_img/logo/react/like.png" alt="" style="left: 0;z-index: 10;">
+                                <img src="fb_img/logo/react/love.png" alt="" style="left: 18px;z-index: 9;">
+                                <img src="fb_img/logo/react/care.png" alt="" style="left: 36px;z-index: 8;">
+                                <span  style="left: 63px;"><a href="#">343</a></span>
+                            </div>                        
+                            <div class="total-cs"><a href="#">80 Comments </a> &nbsp;<a href="#">211 Shares </a></div>
+                        </div>
+                        <div class="divider post-divider"></div>
+                        <div class="give-react">
+                            <div class="like">
+                                <img src="fb_img/logo/react/love.png" alt="" width="">
+                                <span style="color: rgb(245, 60, 60);font-weight: bold;">Love</span>
+                            </div>
+                            <div class="comment">
+                                <i class="feather-message-square" ></i>
+                                <span>Comment</span>
+                            </div>
+                            <div class="share">
+                                <i class="feather-share" ></i>
+                                <span>Share</span>
+                            </div>
+                        </div>
+                      <div class="divider post-divider"></div>
+                        <!--<div class="give-comment">
+                            <div class="give-comment-img">
+                                <img src="fb_img/profi_pic/pf.jpg" >
+                            </div>
+                            <div class="add-text-box">
+                                <input type="text" class="post-text" placeholder="Write a comment..">
+                                <div class="give-comment-icon">
+                                    <img src="fb_img/logo/react/emj.png " alt="" >  
+                                    <img src="fb_img/logo/react/camera.png " alt="" >  
+                                    <img src="fb_img/logo/react/gif2.png " alt="" >
+                                    <img src="fb_img/logo/react/sticker.png " alt="" >       
+                                </div>
+                            </div>                        
+                        </div> -->
+                    </div>
+                </div>
+                 <!-- 11 post -->
+                 <div class="post_list">
+                    <!-- post head -->
+                    <div class="post-head">
+                        <div class="pf-box">
+                            <div class="pf-img">
+                                <img src="fb_img/profi_pic/trans.jpg" >
+                            </div>
+                            <p class="pf-text">
+                                <span style="font-family:sans-serif;font-weight: bolder;letter-spacing: 3px;">TRaNs</span><br>
+                                <small>Just now<sup>&nbsp;.&nbsp;</sup><i class="fas fa-globe-asia fa-1x"></i></small>
+                            </p>
+                        </div>
+                        <div class="post-choice">
+                            <i class="feather-more-horizontal"></i>
+                        </div>
+                    </div>
+                    <!-- post body -->
+                    <div class="post-body">
+                        <div class="post-innertext"> </div>
+                        <div class="post-photo">
+                            <img src="fb_img/post/11_post.jpg">
+                        </div>
+                    </div>
+                    <!-- post-react-part -->
+                    <div class="react-part">
+                        <div class="total-react">
+                            <div class="total-like">
+                                <img src="fb_img/logo/react/like.png" alt="" style="left: 0;z-index: 10;">
+                                <img src="fb_img/logo/react/haha.png" alt="" style="left: 18px;z-index: 9;">
+                                <span  style="left: 49px;"><a href="#">50</a></span>
+                            </div>                        
+                            <div class="total-cs"><a href="#">30 Comments </a> &nbsp;<a href="#">86 Shares </a></div>
+                        </div>
+                        <div class="divider post-divider"></div>
+                        <div class="give-react">
+                            <div class="like">
+                                <img src="fb_img/logo/react/haha.png" alt="" width="">
+                                <span style="color: rgb(253, 199, 51);font-weight: bold;">HaHa</span>
+                            </div>
+                            <div class="comment">
+                                <i class="feather-message-square" ></i>
+                                <span>Comment</span>
+                            </div>
+                            <div class="share">
+                                <i class="feather-share" ></i>
+                                <span>Share</span>
+                            </div>
+                        </div>
+                      <div class="divider post-divider"></div>
+                        <!--<div class="give-comment">
+                            <div class="give-comment-img">
+                                <img src="fb_img/profi_pic/pf.jpg" >
+                            </div>
+                            <div class="add-text-box">
+                                <input type="text" class="post-text" placeholder="Write a comment..">
+                                <div class="give-comment-icon">
+                                    <img src="fb_img/logo/react/emj.png " alt="" >  
+                                    <img src="fb_img/logo/react/camera.png " alt="" >  
+                                    <img src="fb_img/logo/react/gif2.png " alt="" >
+                                    <img src="fb_img/logo/react/sticker.png " alt="" >       
+                                </div>
+                            </div>                        
+                        </div> -->
+                    </div>
+                </div>
+            </div>    
+        </section>    
+        <section class="fb_body_right_part scroll">
+            <div class="right_part_container">
+                <div class="sponsored">
+                    <div class="sp-first-part">
+                        <h3>Sponsored</h3>
+                        <div class="sponsored-item">
+                            <div class="sp-item-img">
+                                <img src="fb_img/profi_pic/sponsore1.jpg" alt="">
+                            </div>
+                            <div class="sp-item-text">
+                                <h4>Ponicode</h4>
+                                <small><a href="https://www.ponicode.com/" target="_blank">
+                                    ponicode.com</a></small>
+                            </div>
+                        </div>
+                        <div class="sponsored-item">
+                            <div class="sp-item-img">
+                                <img src="fb_img/profi_pic/sponsore2.jpg" alt="">
+                            </div>
+                            <div class="sp-item-text">
+                                <h4>iMyanmarHouse</h4>
+                                <small><a href="https://www.imyanmarhouse.com/promo" target="_blank">
+                                    imyanmarhouse.com</a></small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                </div>
+                
+                <div class="friend-requests">
+                    <div class="fr-first-part">
+                        <h3 style="color:var(--text-grey)">Friends requests</h3>
+                        <span><a href="#" class="seeAll" style="color: var(--primary);">See All</a></span>
+                    </div>
+                    <div class="fr-second-part">
+                        <div class="fr-img">
+                            <img src="fb_img/profi_pic/leo.jpg">
+                        </div>
+                        <div class="fr-second-part-list">
+                            <div class="name">
+                                <span style="line-height: 20px;">Leo Guy<br><small style="color: var(--text-grey);">1 mutal friends</small></span>
+                                <span style="color: var(--text-grey);">4d</span>
+                            </div>
+                            <div class="confirm-box">
+                                <div class="confirm">Confirm</div>
+                                <div class="delete">Delete</div>
+                            </div>
+                        </div>    
+                    </div>
+                    <div></div>
+                </div>
+                <div class="divider"></div>
+                <div class="birthdays">
+                    <h3>Birthdays</h3>
+                    <div class="birthdays-list">
+                        <i class="feather-gift"></i>
+                        <sapn><b>Yadanar's</b> birthday is today.</sapn>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="contacts">
+                    <div class="contacts-head">
+                        <h3 style="color: var(--text-grey);">Contacts</h3>
+                        <div class="contacts-icon">
+                            <i class="feather-video"></i>
+                            <i class="feather-search"></i>
+                            <i class="feather-more-horizontal"></i>
+                        </div>
+                    </div>
+                    <div class="contacts-list-part">
+                        <ul>
+                            <li>
+                                <div class="contacts-list-item">
+                                    <div class="active-img">
+                                        <img src="fb_img/profi_pic/koko.jpg">
+                                        <div class="active-ball"></div>
+                                    </div>
+                                    <span>Yadanar Ko Ko</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="contacts-list-item">
+                                    <div class="active-img">
+                                        <img src="fb_img/profi_pic/htet.jpg" class="mday">
+                                        <div class="active-ball"></div>
+                                    </div>
+                                    <span>Htet Htet Soe Oo</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="contacts-list-item">
+                                    <div class="active-img">
+                                        <img src="fb_img/profi_pic/yadanar.jpg">
+                                        <div class="active-ball"></div>
+                                    </div>
+                                    <span>Aye Nandar Aung</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="contacts-list-item">
+                                    <div class="active-img">
+                                        <img src="fb_img/profi_pic/moe.jpg" class="mday">
+                                        <div class="active-ball"></div>
+                                    </div>
+                                    <span>Moe Thinzar Aung</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="contacts-list-item">
+                                    <div class="active-img">
+                                        <img src="fb_img/profi_pic/chokyi.jpg" class="mday">
+                                        <div class="active-ball"></div>
+                                    </div>
+                                    <span>Cho Kyi Khin</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="contacts-list-item">
+                                    <div class="active-img">
+                                        <img src="fb_img/profi_pic/heinhtet.jpg">
+                                        <div class="active-ball"></div>
+                                    </div>
+                                    <span>Sir Hein Htet Zan</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="contacts-list-item">
+                                    <div class="active-img">
+                                        <img src="fb_img/profi_pic/min_khant.jpg">
+                                        <div class="active-ball"></div>
+                                    </div>
+                                    <span>Wai Yan</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="contacts-list-item">
+                                    <div class="active-img">
+                                        <img src="fb_img/profi_pic/myat_thu_latt1.jpg" class="mday">
+                                        <div class="active-ball"></div>
+                                    </div>
+                                    <span>Myat Thu Latt</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="contacts-list-item">
+                                    <div class="active-img">
+                                        <img src="fb_img/profi_pic/thet_htar.jpg"  class="mday">
+                                        <div class="active-ball"></div>
+                                    </div>
+                                    <span>Thet Htar</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="contacts-list-item">
+                                    <div class="active-img">
+                                        <img src="fb_img/profi_pic/aye_yadanar_win.jpg" class="mday">
+                                        <div class="active-ball"></div>
+                                    </div>
+                                    <span>Aye Yadanar Win</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="contacts-list-item">
+                                    <div class="active-img">
+                                        <img src="fb_img/profi_pic/katharlay.jpg" class="mday">
+                                        <div class="active-ball"></div>
+                                    </div>
+                                    <span>Kathar Lay</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="contacts-list-item">
+                                    <div class="active-img">
+                                        <img src="fb_img/profi_pic/moe_hnin.jpg">
+                                        <div class="active-ball"></div>
+                                    </div>
+                                    <span>Moe Hnin</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="contacts-list-item">
+                                    <div class="active-img">
+                                        <img src="fb_img/profi_pic/pin_gin.jpg">
+                                        <div class="active-ball"></div>
+                                    </div>
+                                    <span>Pin gin</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="contacts-list-item">
+                                    <div class="active-img">
+                                        <img src="fb_img/profi_pic/lamin.jpg">
+                                        <div class="active-ball"></div>
+                                    </div>
+                                    <span>La Min Eim</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="contacts-list-item">
+                                    <div class="active-img">
+                                        <img src="fb_img/profi_pic/Thwe.jpg">
+                                        <div class="active-ball"></div>
+                                    </div>
+                                    <span>Thwe</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="contacts-list-item">
+                                    <div class="active-img">
+                                        <img src="fb_img/profi_pic/htet_Oo.jpg">
+                                        <div class="active-ball"></div>
+                                    </div>
+                                    <span>Htet Htet Oo</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="contacts-list-item">
+                                    <div class="active-img">
+                                        <img src="fb_img/profi_pic/nadi.jpg">
+                                        <div class="active-ball"></div>
+                                    </div>
+                                    <span>Nadi Nadi</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="contacts-list-item">
+                                    <div class="active-img">
+                                        <img src="fb_img/profi_pic/myat_po.jpg">
+                                        <div class="active-ball"></div>
+                                    </div>
+                                    <span>Myat Po</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="contacts-list-item">
+                                    <div class="active-img">
+                                        <img src="fb_img/profi_pic/susandy.jpg">
+                                        <div class="active-ball"></div>
+                                    </div>
+                                    <span>Su Sandy Myo</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="contacts-list-item">
+                                    <div class="active-img">
+                                        <img src="fb_img/profi_pic/nyein_nyein.jpg" class="mday">
+                                        <div class="active-ball"></div>
+                                    </div>
+                                    <span>Nyein Nyein</span>
+                                </div>
+                            </li>
+                        
+                            <li>
+                                <div class="contacts-list-item">
+                                    <div class="active-img">
+                                        <img src="fb_img/profi_pic/mst_yangon.jpg">
+                                        <div class="active-ball"></div>
+                                    </div>
+                                    <span>Ye Zarni Htun</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="contacts-list-item">
+                                    <div class="active-img">
+                                        <img src="fb_img/profi_pic/fara.jpg">
+                                        <div class="active-ball"></div>
+                                    </div>
+                                    <span>Farhan abus</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="contacts-list-item">
+                                    <div class="active-img">
+                                        <img src="fb_img/profi_pic/alpha.jpg">
+                                        <div class="active-ball"></div>
+                                    </div>
+                                    <span>Alpha</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="contacts-list-item">
+                                    <div class="active-img">
+                                        <img src="fb_img/profi_pic/hiroshi_saitio.jpg">
+                                        <div class="active-ball"></div>
+                                    </div>
+                                    <span>Myat Thura Aung</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="contacts-list-item">
+                                    <div class="active-img">
+                                        <img src="fb_img/profi_pic/khank_zwe.jpg">
+                                        <div class="active-ball"></div>
+                                    </div>
+                                    <span>Khant Zwe</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="contacts-list-item">
+                                    <div class="active-img">
+                                        <img src="fb_img/profi_pic/yimon.jpg">
+                                        <div class="active-ball"></div>
+                                    </div>
+                                    <span>Yimon Oo</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="contacts-list-item">
+                                    <div class="active-img">
+                                        <img src="fb_img/profi_pic/sukhet.jpg">
+                                        <div class="active-ball"></div>
+                                    </div>
+                                    <span>Suekhet Wyne</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="contacts-list-item">
+                                    <div class="active-img">
+                                        <img src="fb_img/profi_pic/minKhant.jpg">
+                                        <div class="active-ball"></div>
+                                    </div>
+                                    <span>Min Khant Ko</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <!-- New Message -->
+    <div class="new_message">
+        <i class="feather-edit"></i>
+    </div>
+</body>
+</html>  
