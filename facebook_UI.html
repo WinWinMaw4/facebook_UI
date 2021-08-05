@@ -3,18 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+   
+    <!-- Primary Meta Tags -->
+    <title>Facebook UI</title>
+    <meta name="title" content="Facebook UI Design">
+    <meta name="description" content="facebook ui design with only html, css and js(a little)😁">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://github.com/WinWinMaw4/facebook_UI/">
+    <meta property="og:title" content="Facebook UI Design">
+    <meta property="og:description" content="facebook ui design with only html, css and js(a little)😁">
+    <meta property="og:image" content="fb_img/facebook_ui_ss.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://github.com/WinWinMaw4/facebook_UI/">
+    <meta property="twitter:title" content="Facebook UI example">
+    <meta property="twitter:description" content="facebook ui design with only html, css and js(a little)😁">
+    <meta property="twitter:image" content="fb_img/facebook_ui_ss.jpg">
+
+
+
+
+
+    <link rel="shortcut icon" href="fb_img/logo/fb_logo.png" type="image/x-icon">
     <link rel="stylesheet" href="fb_style.css">
     <link rel="stylesheet" href="feather_icon/Compressed/feather.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <script src="js_facebook_UI.js"></script>
    
 </head>
-<body>
+<body animate__animated >
     <nav>
         <div class="nav_left">
             <div class="left_box">
-                <img id="fb_logo_img" src="fb_img/logo/fb_logo.png" alt="fb logo" onclick="darkMode()">            
+                <img id="fb_logo_img" src="fb_img/logo/fb_logo.png" alt="fb logo" onclick="darkMode()" title="Change Mode">            
                 <div class="search-box">
                     <i class="feather-search search-icon" ></i>
                     <input class="search-text" type="text"  name="search" placeholder="search Facebook">
@@ -163,13 +188,13 @@
                         </li>
                         <li class="hide_part">
                             <div class="left-part-list" id="see_less" onclick="seemore();">
-                            <i class="feather-chevron-up" style="background-color: var(--soft-dark);padding: 10px;border-radius: 50%;" ></i>&nbsp;&nbsp;
+                            <i class="feather-chevron-up see_less_icon"></i>&nbsp;&nbsp;
                                 <span>see less</span>
                             </div>
                         </li>
                         <li >
                             <div class="left-part-list" id="see_more" onclick="seemore();">
-                            <i class="feather-chevron-down" style="background-color: var(--soft-dark);padding: 10px;border-radius: 50%;" ></i>&nbsp;&nbsp;
+                            <i class="feather-chevron-down see_more_icon" ></i>&nbsp;&nbsp;
                                 <span>see more</span>
                             </div>
                         </li>
@@ -300,13 +325,13 @@
                         </li>
                         <li class="hide_part">
                             <div class="left-part-list" id="see_less2" onclick="seemore2();">
-                            <i class="feather-chevron-up" style="background-color: var(--soft-dark);padding: 10px;border-radius: 50%;" ></i>&nbsp;&nbsp;
+                            <i class="feather-chevron-up see_less_icon" style="background-color: var(--soft-dark);padding: 10px;border-radius: 50%;" ></i>&nbsp;&nbsp;
                                 <span>see less</span>
                             </div>
                         </li>
                         <li>
                             <div class="left-part-list shortcut" id="see_more2" onclick="seemore2();">
-                            <i class="feather-chevron-down" style="background-color: var(--soft-dark);padding: 10px;border-radius: 50%;" ></i>&nbsp;&nbsp;
+                            <i class="feather-chevron-down see_more_icon" style="background-color: var(--soft-dark);padding: 10px;border-radius: 50%;" ></i>&nbsp;&nbsp;
                                 <span>see more</span>
                             </div>
                         </li>
@@ -491,7 +516,7 @@
                     <div class="post-body">
                         <!-- <div class="post-innertext">L'OREAL ပွဲမှာတွေ့ရတဲ့ Moe </div> -->
                         <div class="post-photo">
-                            <img src="fb_img/post/sarcasm.jpg">
+                            <img src="fb_img/post/1_post.jpg">
                         </div>
                     </div>
                     <!-- post-react-part -->
@@ -545,7 +570,7 @@
                     <div class="post-body">
                         <!-- <div class="post-innertext"></div> -->
                         <div class="post-photo">
-                            <img src="fb_img/pf6.jpg">
+                            <img src="fb_img/post/2_post.jpg">
                         </div>
                     </div>
                     <!-- post-react-part -->

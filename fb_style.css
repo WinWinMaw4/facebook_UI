@@ -27,6 +27,7 @@
     body{
         background-color: var(--dark);
         min-height: 900vh;
+        transition:0.5s;
     }
     nav{
         height: 55px;
@@ -116,7 +117,7 @@
     }
     .center_link.active:hover{
         background-color: var(--semi-dark);   
-        border-radius: 0px;   
+        border-radius: 10px;   
     }
     .center_link.active{
         border-bottom: 3px solid var(--primary);
@@ -293,6 +294,11 @@
     .link>ul>li>a{
         color: var(--text-grey);
     }
+    .see_less_icon,.see_more_icon{
+        background-color: var(--soft-dark);
+        padding: 10px;
+        border-radius: 50%;
+    }
     .fb_main_part{
         width: 50%;
         padding: 0px 90px;
@@ -323,7 +329,7 @@
         
     }
     .my-day{
-        background-color: black;
+        /* background-color: black; */
         display: flex;
         flex-direction: column;
         justify-content: flex-end;        
@@ -360,7 +366,7 @@
         justify-content: center;
         align-items: center;
         position: absolute;
-        left: 33px;
+        left: 39px;
         bottom: 45px;
         z-index: 1;
         cursor: pointer;         
@@ -393,14 +399,14 @@
         justify-content: space-between;
         align-items: flex-start;
         position: relative;
-        border: 1px solid var(--dark);
+        border: 0px solid var(--dark);
         border-radius: 8px;
         /* border: 1px solid yellow; */
         
     }
-    .other:hover{
+    /* .other:hover{
         
-    }
+    } */
     .other-pf{
         background-color: var(--primary);
         width: 30px;
@@ -460,6 +466,7 @@
         align-items: center;
         position: absolute;
         right: -15px;
+        cursor: pointer;
     }
     .add_post{
         margin-top: 25px;
@@ -474,9 +481,9 @@
         display: flex;
         justify-content: center;
     }
-    .add-post-text{
+    /* .add-post-text{
 
-    }
+    } */
     .add-text{
         display: flex;
         flex-grow: 1;
@@ -616,7 +623,7 @@
         margin-right: 10px;
         cursor: pointer;
     }
-    .create-room-pf-item:hover,.scroll-create-room:hover{
+    .create-room-pf-item:hover,.scroll-my-day:hover,.scroll-create-room:hover,.new_message:hover{
         filter:contrast(0.7);
     }
     .create-room-pf>.create-room-pf-item>img{
@@ -704,9 +711,9 @@
     .post-head>.post-choice{
         cursor: pointer;
     }
-    .post-body{
+    /* .post-body{
 
-    }
+    } */
     .post-body>.post-innertext{
         padding: 5px 30px;
         font-size: 15px;
@@ -720,9 +727,9 @@
         /* max-height: 500px; */
         object-fit: cover;
     }
-    .react-part{
+    /* .react-part{
 
-    }
+    } */
     .react-part>.total-react{
         display: flex;
         justify-content: space-between;
@@ -860,8 +867,8 @@
         color: var(--text-grey);
         margin-top: 20px;
     }
-    .sponsored{
-    }
+    /* .sponsored{
+    } */
     .sponsored-item{
         display: flex;
         justify-content: start;
@@ -993,15 +1000,15 @@
         align-items: center;
         
     }
-    .contacts-icon{
+    /* .contacts-icon{
 
-    }
+    } */
     .contacts-icon>i{
         margin-left: 15px;
     }
-    .contacts-list-part{
+    /* .contacts-list-part{
 
-    }
+    } */
     .contacts-list-part>ul{
         list-style: none;
         padding-top: 10px;
@@ -1051,9 +1058,9 @@
         left: 25px;
         bottom: 0px;
     }
-    .contacts-list-item>span{
+    /* .contacts-list-item>span{
 
-    }
+    } */
     .scroll{
         height: 95vh;
         scroll-behavior: smooth;
@@ -1075,7 +1082,7 @@
         border-color: rgba(204, 201, 202, 0.664);
     } 
     .new_message{
-        background-color: var(--soft-dark);
+        background-color: #3a3b3c;
         width: 50px;
         height: 50px;
         border-radius: 50%;
@@ -1085,6 +1092,7 @@
         position: fixed;
         bottom: 20px;
         right: 20px;
+        cursor: pointer;
     }
     .new_message>i{
         font-size: x-large;
@@ -1109,23 +1117,81 @@
         border-radius: 50%;
         margin-right: 5px;
     }
+
+    /* dark Mode option */
     .dark-mode {
-
-                background: #360033;  /* fallback for old browsers */
-                background: -webkit-linear-gradient(to left, #0b8793, #360033);  /* Chrome 10-25, Safari 5.1-6 */
-                background: linear-gradient(to left, #0b8793, #360033); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-                background: #659999;  /* fallback for old browsers */
-                background: -webkit-linear-gradient(to right, #f4791f, #659999);  /* Chrome 10-25, Safari 5.1-6 */
-                background: linear-gradient(to right, #f4791f, #659999); /*W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+*/
-                background: #BA8B02;  /* fallback for old browsers */
-                background: -webkit-linear-gradient(to right, #181818, #BA8B02);  /* Chrome 10-25, Safari 5.1-6 */
-                background: linear-gradient(to right, #181818, #BA8B02); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-                background: #FFA17F;  /* fallback for old browsers */
-                background: -webkit-linear-gradient(to left, #00223E, #FFA17F);  /* Chrome 10-25, Safari 5.1-6 */
-                background: #c31432;  /* fallback for old browsers */
-                background: -webkit-linear-gradient(to right, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
-                background: linear-gradient(to right, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-                        color: var(--dark);
+                background: #240b36;/*fallback fo old browsers*/
+                background: -webkit-linear-gradient(to right, #240b36, #2196f3,#240b36);  /* Chrome 10-25, Safari 5.1-6 */
+                background: linear-gradient(to right, #240b36, #2196f3,#240b36);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                color: var(--dark);
+                
       } 
+    .dark-mode-mainpart{
+        background: linear-gradient(to right,#240b367a,#240b367a);
+    }
+    .hover-class:hover{
+        background-color:#3877b54d !important;
+        /* background-color: linear-gradient(45deg, #5b63965e, #5b639685) !important; */
+    }
+    .dm-addTextBox {
+        background: linear-gradient(to right,#240b367a,#240b367a) !important;
+    }
+    .dm-myDayText{
+        background: linear-gradient(to top, #250361, #2196f399) !important;
+    }
+    .dm-postText {
+        background: linear-gradient(to right,#240b3600,#240b3600) !important;
+    }
+    .dm-nav {
+        background: linear-gradient(to right,#234281,#240b36,#234281) !important;
+    }
+    .dm-searchBox {
+        /* background: linear-gradient(to right, #234a8b, #235297) !important; */
+        background: transparent !important;
+    }
+    .dm-searchText {
+        background: transparent !important;
+    }
+    .dm-icon{
+        background: linear-gradient(45deg, #242d64, #242d64) !important;
+    }
+    .dm-rightPart:hover{
+        background: linear-gradient(45deg, #5b63965e, #5b639685) !important;
+    }
+    .dm-divider{
+        background-color: #673ab7 !important;
+    }
+    .dm-ownerPf{
+        background-color: #361275 !important;
+    }
+    /* .add_file>div:hover,.give-react>div:hover {
+        background-color: #3877b559;
+    } */
+    /* .add_file>div:hover,.give-react>div:hover,.sponsored-item:hover,.fr-second-part:hover,.birthdays-list:hover,.contacts-list-item:hover,.left_part_first>ul>li:hover,.your-shortcut>li:hover ,.center_link:hover,.center_link.active:hover,.right_part:hover {
+        background-color: #3877b529;
+    }
+    
+    .right_part:hover{
+        background: linear-gradient(45deg, #5b63965e, #5b639685);
+    }
+    .add-text-box {
+        background: linear-gradient(to right,#240b367a,#240b367a);
+    }
+    .post-text {
+        background: linear-gradient(to right,#240b3600,#240b3600);
+    }
+    nav {
+        background: linear-gradient(to right,#234281,#240b36,#234281);
+    }
+    .search-box {
+        background: linear-gradient(to right, #234a8b, #235297);
+    }
+    .search-text {
+        background: transparent;
+    }
+    .pf_link{
+        background: linear-gradient(45deg, #2359a1, #3549b9);
+    }
+    .see_less_icon,.see_more_icon,.scroll-my-day,.scroll-create-room,.right_part,.new_message{
+        background: linear-gradient(45deg, #242d64, #242d64);
+    } */
