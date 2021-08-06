@@ -982,7 +982,7 @@
         padding: 15px 0px 5px 10px;
         cursor: pointer;
     }
-    .birthdays-list:hover{
+    .birthdays-list:hover,.fr-second-part:hover{
         background-color: #39424281;
         border-radius: 10px;
     }
