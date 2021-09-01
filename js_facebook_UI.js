@@ -1,7 +1,7 @@
 
 let left_part_first_ul_Tag = document.getElementsByClassName("left_part_first_ul");
 
-
+//see more 1
 function seemore(){
     let x = document.getElementById("left_part_first_ul");
 
@@ -49,18 +49,16 @@ function seemore2(){
 
 
 //DARK MODE
-
-function darkMode() {
+let darkMode = ()=>{
     let element = document.body;
     let addPost = document.querySelector('.add_post');
     let createRoomBox = document.querySelector(".create-room-box");
     let fbMainPartContainer = document.querySelector(".fb_main_part_container")
     let postList = document.querySelectorAll(".post_list");
-
-
+    
     //add dark-mode class
-    element.classList.toggle("dark-mode");
-   
+   element.classList.toggle("dark-mode");
+
     //dm-nav
     let dmNav = document.querySelector("nav");
     dmNav.classList.toggle("dm-nav");
@@ -111,4 +109,9 @@ function darkMode() {
       dmDivider[i].classList.toggle("dm-divider");
     }
  }
+
  
+
+
+
+

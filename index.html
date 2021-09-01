@@ -11,17 +11,17 @@
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://github.com/WinWinMaw4/facebook_UI/">
+    <meta property="og:url" content="https://facebookui2021.netlify.app/">
     <meta property="og:title" content="Facebook UI Design">
     <meta property="og:description" content="facebook ui design with only html, css and js(a little)😁">
-    <meta property="og:image" content="fb_img/facebook_ui_ss.jpg">
+    <meta property="og:image" content="fb_img/facebookmockup.jpg">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://github.com/WinWinMaw4/facebook_UI/">
+    <meta property="twitter:url" content="https://facebookui2021.netlify.app/">
     <meta property="twitter:title" content="Facebook UI example">
     <meta property="twitter:description" content="facebook ui design with only html, css and js(a little)😁">
-    <meta property="twitter:image" content="fb_img/facebook_ui_ss.jpg">
+    <meta property="twitter:image" content="fb_img/facebookmockup.jpg">
 
 
 
@@ -32,14 +32,16 @@
     <link rel="stylesheet" href="feather_icon/Compressed/feather.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <script src="js_facebook_UI.js"></script>
+    <style>
+       
+    </style>
    
 </head>
-<body animate__animated >
+<body  animate__animated >
     <nav>
         <div class="nav_left">
             <div class="left_box">
-                <img id="fb_logo_img" src="fb_img/logo/fb_logo.png" alt="fb logo" onclick="darkMode()" title="Change Mode">            
+                <img id="fb_logo_img" src="fb_img/logo/fb_logo.png" alt="fb logo" class="darkmode-toggle" onclick="darkMode()" title="Change Mode">            
                 <div class="search-box">
                     <i class="feather-search search-icon" ></i>
                     <input class="search-text" type="text"  name="search" placeholder="search Facebook">
@@ -445,11 +447,11 @@
                         </div>
                     </div>
                     <div class="create-room-pf">
-                        <div class="create-room-pf-item" title="Wai Yan">
+                        <div class="create-room-pf-item" title="wai yan">
                             <img src="fb_img/profi_pic/min_khant.jpg">
                             <div class="active-btn"></div>
                         </div>
-                        <div class="create-room-pf-item" title="Htet">
+                        <div class="create-room-pf-item" title="Htet_Soe_Oo">
                             <img src="fb_img/profi_pic/htet.jpg">
                             <div class="active-btn"></div>
                         </div>
@@ -481,14 +483,14 @@
                             <img src="fb_img/profi_pic/chokyi.jpg">
                             <div class="active-btn"></div>
                         </div>
-                        <div class="create-room-pf-item">
+                        <!-- <div class="create-room-pf-item">
                             <img src="fb_img/profi_pic/susandy.jpg">
                             <div class="active-btn"></div>
-                        </div>
-                        <div class="create-room-pf-item">
+                        </div> -->
+                        <!-- <div class="create-room-pf-item">
                             <img src="fb_img/profi_pic/myat_po.jpg">
                             <div class="active-btn"></div>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="scroll-create-room">
                         <i class="feather-chevron-right"></i>
@@ -1492,5 +1494,15 @@
     <div class="new_message">
         <i class="feather-edit"></i>
     </div>
+
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+    <script src="js_facebook_UI.js" charset="utf-8"></script>
+
 </body>
+
 </html>  
