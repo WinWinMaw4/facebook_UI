@@ -1,6 +1,5 @@
 
 let left_part_first_ul_Tag = document.getElementsByClassName("left_part_first_ul");
-
 //see more 1
 function seemore(){
     let x = document.getElementById("left_part_first_ul");
@@ -24,7 +23,6 @@ function seemore(){
       }
     }
 }
-
 //seemore2()
 function seemore2(){
   let x = document.getElementById("left_part_second_ul");
@@ -46,9 +44,7 @@ function seemore2(){
     }
   }
 }
-
-
-//DARK MODE
+//blue MODE
 let darkMode = ()=>{
     let element = document.body;
     let addPost = document.querySelector('.add_post');
@@ -92,10 +88,13 @@ let darkMode = ()=>{
 
 
     //add input  style .add-text-box
-    let addTextBox = document.querySelector(".add-text-box");
-    let postText = document.querySelector(".post-text");
-    addTextBox.classList.toggle("dm-addTextBox") ;
-    postText.classList.toggle("dm-postText");
+    let addTextBox = document.querySelectorAll(".add-text-box");
+    let postText = document.querySelectorAll(".post-text");
+    for(let i=0;i<addTextBox.length;i++){
+      addTextBox[i].classList.toggle("dm-addTextBox") ;
+      postText[i].classList.toggle("dm-postText");
+    }
+    
 
     //small icons ,dm-icon
     let dmIcon=document.querySelectorAll(".see_less_icon,.see_more_icon,.scroll-my-day,.scroll-create-room,.right_part,.new_message");
